@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms y JV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>¿Cuántos pesos necesito?</h1>
+
+  <form id="viajeForm">
+    <label for="dias">¿Cuántos días me quedo?</label>
+    <input type="number" id="dias" required min="1">
+
+    <label for="destino">¿A dónde viajo?</label>
+    <select id="destino" required>
+      <option value="cuzco">Cuzco</option>
+      <option value="rio">Río de Janeiro</option>
+      <option value="miami">Miami</option>
+      <option value="barcelona">Barcelona</option>
+      <option value="tokyo">Tokyo</option>
+      <option value="londres">Londres</option>
+      <option value="sydney">Sídney</option>
+      <option value="santiago">Santiago de Chile</option>
+    </select>
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
